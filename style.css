@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Baloo+Bhaina+2&display=swap');
+*{
+    box-sizing:  border-box;
+}
+nav{
+    background-color: aqua;
+    color: black;
+    height: 25px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+nav ul{
+    list-style-type:none;
+}
+body{
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.seat{
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.row{
+    display: flex;
+}
+.movie-container{
+    margin: 20px 0;
+}
+.movie-container select{
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    
+}
+.seat.selected{
+    background-color: palevioletred;
+}
+.seat.occupied{
+    background-color: #fff;
+}
+.seat:nth-of-type(4){
+    margin-right: 20px;
+}
+.seat:nth-last-of-type(3){
+    margin-left: 20px;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+.showcase{
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.showcase li small{
+    margin-left: 10px;
+}
+.screen{
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgb(209, 168, 168);
+}
+.container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+p.text{
+    margin: 5px 0;
+}
+p.text span{
+    color: aquamarine;
+}
+footer{
+    background-color: aqua;
+    color:black;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+    border: solid 1px;
+    
+}
